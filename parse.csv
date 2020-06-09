@@ -1,0 +1,7 @@
+import csv
+
+with open ('patron.csv') as data:
+   csv_reader=csv.reader(data)
+
+   #print(csv_reader) it retuens only object
+   
