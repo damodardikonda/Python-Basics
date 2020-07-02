@@ -1,0 +1,7 @@
+''' Write a Program to convert entered Binary Number to Hexadecimal Number.
+Input: Binary Number: 1011
+Output: Hexadecimal Number: B
+ '''
+
+
+n1,n2=int(input("Enter the 4 digit number"));
