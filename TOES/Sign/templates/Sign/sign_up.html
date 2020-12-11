@@ -1,0 +1,114 @@
+{% load static%}
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+
+
+        <!-- Required meta tags -->
+       <meta charset="utf-8">
+       <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+       <!-- Bootstrap CSS -->
+       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+     <link rel="stylesheet" type="text/css" href="{% static 'Sign/create_acc.css' %}">
+
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+        <meta charset="utf-8">
+
+    <meta charset="utf-8">
+
+
+
+<!-- code of bootstrap start from here -->
+
+<div class="container ">
+  <div class="row " >
+    <div  class="col-md-6">
+      <div class="c1" style="background-color : #F0E5E5">
+
+        <h5 id = "hhhh">Sign UP </h5>
+
+               <!--
+                   <div id = "tf1" class="form-group col-5">
+
+                      Name :  <input type="text" class="form-control form-control-sm" id="usr">
+                    </div>
+                  <div id = "tf2" class="form-group col-5">
+                        <label  for="pwd" > UserName :</label>
+                      <input type="text" class="form-control form-control-sm" id="pwd">
+                   </div>
+
+
+                    <div id = "tf1" class="form-group col-5">
+                      <label id = "l1" for="usr"">Email Id:</label>
+                           <input type="text" class="form-control form-control-sm" id="usr">
+                       </div>
+                      <div id = "tf2" class="form-group col-5">
+                         <label   for="pwd" > Password: </label>
+                                 <input type="password" class="form-control form-control-sm" id="pwd">
+                           </div>
+                       -->
+                    <form class=" " action="index.html" method="post">
+
+                      Name : <input type="text" maxlength = 30 name = "Name"  id = "fta"><br>
+                      UserName : <input type="text" maxlength = 30 name = "UserName" id = "ta"><br>
+                      EmailId : <input type="email" maxlength = 30 name = "EmailId" id = "ta"><br>
+                      Password : <input type="password" maxlength = 30 name = "Password" id = "ta"><br>
+                      Confirm Password : <input type="password" maxlength = 30 name = "confirmpassword" id = "ta"><br>
+
+
+                  <label style=" margin-top: 40px ;margin-left : 0px;" for="gender"> Gender : </label>
+
+                      <input type="checkbox" id="Male" name="Male" value="Male">
+                      <label for="Male"> Male </label>
+                      <input type="checkbox" id="Female" name="Female" value="Female">
+                      <label for="Female"> Female </label>
+                      <input type="checkbox" id="Other" name="Other" value="Other">
+                     <label for="Other">Other</label><br><br>
+
+
+                    <a id = "btn1" class="btn btn-info" role="button"  href="{% url 'sign_in' %}"> Lets Go </a>
+                  </form>
+
+
+      </div>
+    </div>
+      <div  class="col-md-6"  >
+       <div class="c2" style=" background-color : #0000ff ; " >
+
+          <h5 id = "ll" style=" color : white"> Let's get you set up </h5>
+          <hr style = " color : white">
+
+           <h6 id = "hh" style=" color : silver"> It Will Take Couple Of Minutes <br> &nbsp&nbsp&nbsp&nbsp&nbsp To Create Your Account</h6>
+
+           <a id = "btn1" class="btn btn-info" role="button"  href="{% url 'sign_in' %}"> Log In </a>
+
+          <h6 id = 'f1' >&nbsp&nbspFrom <br>  PILLERS</h6>
+       </div>
+      </div>
+    </div>
+  </div>
+
+<!--
+<div class="input-group margin-bottom-sm">
+  <span class="input-group-addon"><i class="fa fa-envelope-o fa-fw"></i></span>
+  <input class="form-control" type="text" placeholder="Email address">
+</div>
+<div class="input-group">
+  <span class="input-group-addon"><i class="fa fa-key fa-fw"></i></span>
+  <input class="form-control" type="password" placeholder="Password">
+</div>
+
+-->
+  </head>
+  <body>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+  </body>
+</html>
